@@ -1,0 +1,55 @@
+# İyzico Bayi Ödeme Paneli - Güvenlik Notları
+
+# Yapılandırma dosyaları (Güvenlik)
+config.php
+.env
+.env.local
+
+# Log dosyaları
+*.log
+logs/
+error_log
+
+# Geçici ve cache dosyaları
+*.cache
+*.tmp
+tmp/
+cache/
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE ve Editor dosyaları
+.idea/
+.vscode/
+.phpstorm.meta.php
+*.sublime-project
+*.sublime-workspace
+
+# Dependency klasörleri
+vendor/
+node_modules/
+
+# Backup dosyaları
+*.bak
+*.backup
+*.sql
+backup/
+
+# Upload klasörü (user uploads)
+uploads/
+temp/
+
+# Session dosyaları
+sessions/
+
+# Composer
+composer.phar
+composer.lock
+
+# Test dosyaları
+phpunit.xml
+.phpunit.result.cache
+

@@ -1,0 +1,300 @@
+/* ==========================================
+   İyzico Bayi Ödeme Paneli - Callback CSS
+   Ödeme Sonuç Sayfası İçin Modern Tasarım
+   ========================================== */
+
+:root {
+    --primary-color: #2563eb;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.result-container {
+    max-width: 600px;
+    width: 100%;
+    animation: zoomIn 0.5s ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.result-card {
+    background: var(--bg-primary);
+    border-radius: 24px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+}
+
+.icon-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.success .icon-wrapper {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 10px 40px rgba(16, 185, 129, 0.3);
+}
+
+.error .icon-wrapper {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    box-shadow: 0 10px 40px rgba(239, 68, 68, 0.3);
+}
+
+.icon-wrapper i {
+    font-size: 60px;
+    color: white;
+}
+
+.result-card h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.success h1 {
+    color: var(--success-color);
+}
+
+.error h1 {
+    color: var(--danger-color);
+}
+
+.message {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+/* Payment Details */
+.payment-details {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    padding: 25px;
+    margin: 30px 0;
+    border: 1px solid var(--border-color);
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row .label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.detail-row .value {
+    font-size: 16px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Error Details */
+.error-details {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #991b1b;
+    font-size: 15px;
+}
+
+.error-message i {
+    font-size: 20px;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    min-width: 160px;
+    justify-content: center;
+}
+
+.btn i {
+    font-size: 18px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+    color: white;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-secondary);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .result-card {
+        padding: 40px 25px;
+    }
+
+    .icon-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-wrapper i {
+        font-size: 50px;
+    }
+
+    .result-card h1 {
+        font-size: 26px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .result-card {
+        box-shadow: none;
+        border: 2px solid var(--border-color);
+    }
+}
+
+/* Confetti Animation for Success */
+.success {
+    position: relative;
+    overflow: hidden;
+}
+
+.success::before,
+.success::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--success-color);
+    opacity: 0;
+}
+
+/* Auto-redirect countdown */
+.countdown {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
