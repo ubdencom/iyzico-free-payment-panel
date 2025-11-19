@@ -298,6 +298,13 @@ $user = $userStmt->fetch();
             document.getElementById('sidebar').classList.toggle('active');
         }
     </script>
+
+    <footer style="text-align: center; padding: 20px; background: white; border-top: 1px solid var(--border-color); margin-top: auto;">
+        <p style="font-size: 13px; color: var(--text-secondary);">
+            Made and Powered by - <a href="https://ubden.com/" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Ubden® Community Platform</a>
+        </p>
+        <p style="margin-top: 5px; font-size: 12px; color: var(--text-secondary);">© <?php echo date('Y'); ?> Tüm Hakları Saklıdır.</p>
+    </footer>
 </body>
 </html>
 

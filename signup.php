@@ -193,6 +193,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['username']) && !empty
         </div>
     </div>
 
+    <footer style="text-align: center; padding: 20px; color: rgba(255,255,255,0.7); font-size: 13px;">
+        <p>Made and Powered by - <a href="https://ubden.com/" target="_blank" style="color: rgba(255,255,255,0.9); text-decoration: none; font-weight: 600;">Ubden® Community Platform</a></p>
+        <p style="margin-top: 5px; font-size: 12px;">© <?php echo date('Y'); ?> Tüm Hakları Saklıdır.</p>
+    </footer>
+
     <script>
         function togglePassword(inputId) {
             const input = document.getElementById(inputId);

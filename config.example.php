@@ -27,6 +27,8 @@ define('IYZICO_BASE_URL', 'https://sandbox-api.iyzipay.com'); // Canlı için: h
 // Site Yapılandırması
 define('SITE_URL', 'http://localhost'); // Sitenizin URL'si
 define('SITE_NAME', 'İyzico Bayi Ödeme Paneli');
+define('SITE_OWNER', 'Ubden® Community Platform');
+define('SITE_OWNER_URL', 'https://ubden.com/');
 define('CALLBACK_URL', SITE_URL . '/callback.php');
 
 // Timezone Ayarı

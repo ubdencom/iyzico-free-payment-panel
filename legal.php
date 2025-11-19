@@ -398,6 +398,10 @@
             <p style="font-size: 12px; margin-top: 10px;">
                 Bu platform İyzico tarafından sağlanmamaktadır. İyzico ödeme altyapısı kullanılmaktadır.
             </p>
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 20px 0;">
+            <p style="font-size: 13px; color: var(--text-secondary);">
+                Made and Powered by - <a href="https://ubden.com/" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">Ubden® Community Platform</a>
+            </p>
         </footer>
     </div>
 </body>

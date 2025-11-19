@@ -278,6 +278,7 @@ Sorularınız veya sorunlarınız için:
 - [İyzico](https://www.iyzico.com/) - Ödeme altyapısı
 - [Font Awesome](https://fontawesome.com/) - İkonlar
 - [Inter Font](https://rsms.me/inter/) - Tipografi
+- [Ubden® Community Platform](https://ubden.com/) - Platform ve geliştirme
 
 ## 📊 Özellikler Yol Haritası
 
@@ -297,4 +298,8 @@ Sorularınız veya sorunlarınız için:
 
 ---
 
-Made with ❤️ by Developer Community
+**Made and Powered by - [Ubden® Community Platform](https://ubden.com/)**
+
+© 2025 Tüm Hakları Saklıdır.
+
+Made with ❤️ in Turkey 🇹🇷
